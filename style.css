@@ -172,16 +172,6 @@ body.alto-contraste .artigo-3 {
   display: inline-block;
 }
 
-#idioma-btn {
-  background: #fff;
-  border: 1px solid #ccc;
-  padding: 6px 10px;
-  font-size: 16px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
 
 .bandeira {
   width: 20px;
@@ -217,4 +207,22 @@ body.alto-contraste .artigo-3 {
 .escondido {
   display: none;
 }
+
+.bandeiras-superiores {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.bandeiras-superiores .bandeira {
+  width: 30px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.bandeiras-superiores .bandeira:hover {
+  transform: scale(1.1);
+}
+
 
