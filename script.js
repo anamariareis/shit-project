@@ -1,5 +1,4 @@
 
- 
  // Animações de ScrollReveal
 ScrollReveal().reveal('#inicio', { delay: 500 });
 ScrollReveal().reveal('#galeria', { delay: 500 });
@@ -29,19 +28,6 @@ const bandeiras = document.querySelectorAll('.bandeira');
 bandeiras.forEach(bandeira => {
   bandeira.addEventListener('click', function() {
     const idioma = this.getAttribute('data-idioma');  // Obtém o idioma através do atributo data-idioma
-    document.getElementById('titulo').innerText = textos[idioma].titulo;
-    document.getElementById('descricao').innerText = textos[idioma].descricao;
-  });
-});
-
-// Adiciona o evento de clique nas bandeiras
-const bandeiras = document.querySelectorAll('.bandeira');
-bandeiras.forEach(bandeira => {
-  bandeira.addEventListener('click', function() {
-    const idioma = this.getAttribute('data-idioma');  // Obtém o idioma através do atributo data-idioma
-    console.log("Idioma selecionado:", idioma);  // Verifica se o clique está funcionando corretamente
-    
-    // Atualiza o conteúdo com base no idioma
     document.getElementById('titulo').innerText = textos[idioma].titulo;
     document.getElementById('descricao').innerText = textos[idioma].descricao;
   });
