@@ -225,4 +225,11 @@ body.alto-contraste .artigo-3 {
   transform: scale(1.1);
 }
 
+.galeria{
+   width: 100%;
+    max-width: 400px; 
+    height: auto;
+    border-radius: 8px;
+}
+
 
