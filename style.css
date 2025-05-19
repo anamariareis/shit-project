@@ -232,4 +232,17 @@ body.alto-contraste .artigo-3 {
     border-radius: 8px;
 }
 
+#contato {
+        background-image: url('img/imagem7.jpg');
+        background-size: cover;
+        padding: 4rem 0;}
+
+         .formulario {
+        background-color: #ffffff;
+        padding: 1rem;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        font-weight: bold;
+    }
+
 
