@@ -273,7 +273,7 @@ body.alto-contraste .artigo-3 {
 }
 
 .formulario button:hover {
-    background-color: #191970;
+    background-color: #4f4fbb;
 }
 
 .botao-github {
@@ -290,7 +290,7 @@ body.alto-contraste .artigo-3 {
 }
 
 .botao-github:hover {
-  background-color: #191970;
+  background-color: #4f4fbb;
   transform: scale(1.05);
 }
 
