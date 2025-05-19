@@ -274,7 +274,7 @@ body.alto-contraste .artigo-3 {
 }
 
 .formulario button:hover {
-    background-color: var(--rosa-neon);
+    background-color: rgb(147, 147, 216);
 }
 
 .botao-github {
