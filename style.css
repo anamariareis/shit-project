@@ -277,4 +277,22 @@ body.alto-contraste .artigo-3 {
     background-color: var(--rosa-neon);
 }
 
+.botao-github {
+  display: inline-block;
+  background-color: var(--roxo-neon);
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.botao-github:hover {
+  background-color: var(--rosa-neon);
+  transform: scale(1.05);
+}
+
 
