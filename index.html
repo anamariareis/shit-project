@@ -134,34 +134,31 @@
             }
         };
 
-        // Função para alterar os textos da página com base no idioma selecionado
-        document.getElementById('idiomas').addEventListener('click', function (event) {
-            const lang = event.target.getAttribute('data-idioma');
-            
-            if (lang) {
-                // Alterar os textos principais
-                document.getElementById('titulo').textContent = textos[lang].titulo;
-                document.getElementById('descricao').textContent = textos[lang].descricao;
+      document.getElementById('idiomas').addEventListener('click', function(event) {
+            // Verifica se o clique foi em uma das bandeiras
+            if (event.target.classList.contains('bandeira')) {
+                const lang = event.target.getAttribute('data-idioma');
+                // Alterar os textos com base no idioma
+                if (textos[lang]) {
+                    document.getElementById('titulo').textContent = textos[lang].titulo;
+                    document.getElementById('descricao').textContent = textos[lang].descricao;
 
-                // Alterar os botões
-                document.getElementById('botao-inicio').textContent = textos[lang].botaoInicio;
-                document.getElementById('botao-artigos').textContent = textos[lang].botaoArtigos;
-                document.getElementById('botao-galeria').textContent = textos[lang].botaoGaleria;
+                    document.getElementById('botao-inicio').textContent = textos[lang].botaoInicio;
+                    document.getElementById('botao-artigos').textContent = textos[lang].botaoArtigos;
+                    document.getElementById('botao-galeria').textContent = textos[lang].botaoGaleria;
 
-                // Alterar o título da seção de artigo
-                document.getElementById('titulo-artigo').textContent = textos[lang].tituloArtigo;
-                document.getElementById('texto-artigo').textContent = textos[lang].textoArtigo;
+                    document.getElementById('titulo-artigo').textContent = textos[lang].tituloArtigo;
+                    document.getElementById('texto-artigo').textContent = textos[lang].textoArtigo;
 
-                // Alterar o título da seção de artigos
-                document.getElementById('titulo-artigos').textContent = textos[lang].tituloArtigos;
+                    document.getElementById('titulo-artigos').textContent = textos[lang].tituloArtigos;
 
-                // Alterar os artigos
-                document.getElementById('titulo-artigo-1').textContent = textos[lang].artigo1Titulo;
-                document.getElementById('texto-artigo-1').textContent = textos[lang].artigo1Texto;
-                document.getElementById('titulo-artigo-2').textContent = textos[lang].artigo2Titulo;
-                document.getElementById('texto-artigo-2').textContent = textos[lang].artigo2Texto;
-                document.getElementById('titulo-artigo-3').textContent = textos[lang].artigo3Titulo;
-                document.getElementById('texto-artigo-3').textContent = textos[lang].artigo3Texto;
+                    document.getElementById('titulo-artigo-1').textContent = textos[lang].artigo1Titulo;
+                    document.getElementById('texto-artigo-1').textContent = textos[lang].artigo1Texto;
+                    document.getElementById('titulo-artigo-2').textContent = textos[lang].artigo2Titulo;
+                    document.getElementById('texto-artigo-2').textContent = textos[lang].artigo2Texto;
+                    document.getElementById('titulo-artigo-3').textContent = textos[lang].artigo3Titulo;
+                    document.getElementById('texto-artigo-3').textContent = textos[lang].artigo3Texto;
+                }
             }
         });
     </script>
