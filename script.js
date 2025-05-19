@@ -1,9 +1,11 @@
 
  
- ScrollReveal().reveal('#inicio', { delay: 500 });
- ScrollReveal().reveal('#galeria', { delay: 500 });
+ // Animações de ScrollReveal
+ScrollReveal().reveal('#inicio', { delay: 500 });
+ScrollReveal().reveal('#galeria', { delay: 500 });
 
- const textos = {
+// Objetos com os textos para cada idioma
+const textos = {
   pt: {
     titulo: "Conexão Campo-Cidade",
     descricao: "Aprendendo juntos como o campo e a cidade se completam"
@@ -22,8 +24,12 @@
   }
 };
 
-document.getElementById('idioma').addEventListener('change', function () {
-  const lang = this.value;
-  document.getElementById('titulo').innerText = textos[lang].titulo;
-  document.getElementById('descricao').innerText = textos[lang].descricao;
+// Adiciona o evento de clique nas bandeiras
+const bandeiras = document.querySelectorAll('.bandeira');
+bandeiras.forEach(bandeira => {
+  bandeira.addEventListener('click', function() {
+    const idioma = this.getAttribute('data-idioma');  // Obtém o idioma através do atributo data-idioma
+    document.getElementById('titulo').innerText = textos[idioma].titulo;
+    document.getElementById('descricao').innerText = textos[idioma].descricao;
+  });
 });
