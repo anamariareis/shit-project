@@ -239,7 +239,7 @@ body.alto-contraste .artigo-3 {
         padding: 4rem 0;}
 
          .formulario {
-        background-color: rgb(186, 213, 236);
+        background-image: url("imagem\ formulario.jpg");
         padding: 1rem;
         border-radius: 10px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -263,7 +263,6 @@ body.alto-contraste .artigo-3 {
 }
 
 .formulario button {
-    background-color: var(--roxo-neon);
     color: rgb(0, 0, 0);
     border: none;
     padding: 10px;
