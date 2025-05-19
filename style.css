@@ -279,8 +279,8 @@ body.alto-contraste .artigo-3 {
 
 .botao-github {
   display: inline-block;
-  background-color: beige;
-  color: #000000;
+  background-color: rgb(186, 213, 236);
+  color: #ffffff;
   padding: 12px 20px;
   border-radius: 8px;
   text-decoration: none;
@@ -291,7 +291,7 @@ body.alto-contraste .artigo-3 {
 }
 
 .botao-github:hover {
-  background-color: rgb(65, 144, 235);
+  background-color: #191970;
   transform: scale(1.05);
 }
 
